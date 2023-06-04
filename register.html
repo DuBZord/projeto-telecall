@@ -180,7 +180,7 @@
                       />
                     </div>
 
-                    <form>
+                    <form id="formulariotodo">
                       <p>Faça seu Registro</p>
 
                       <div class="form-outline mb-4">
@@ -190,7 +190,7 @@
                           name="user"
                           class="form-control email"
                           maxlength="6"
-                          placeholder="Usuario"
+                          placeholder="Usuário"
                           required
                         />
                         <label class="form-label" for="user"></label>
@@ -207,7 +207,9 @@
                           placeholder="E-mail"
                           required
                         />
-                        <label class="form-label" for="form2Example11"></label>
+                        <label class="form-label" for="email"></label>
+                        <span id="email-error" class="invalid-feedback"></span>
+                        <span id="email-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -221,6 +223,8 @@
                           required
                         />
                         <label class="form-label" for="form2Example22"></label>
+                        <span id="senha-error" class="invalid-feedback"></span>
+                        <span id="senha-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -234,6 +238,8 @@
                           required
                         />
                         <label class="form-label" for="form2Example22"></label>
+                        <span id="senha2-error" class="invalid-feedback"></span>
+                        <span id="senha2-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -243,8 +249,6 @@
                           class="form-control nomecompleto"
                           name="nomecompleto"
                           placeholder="Nome Completo"
-                          minlength="15"
-                          maxlength="60"
                           required
                         />
                         <label class="form-label" for="nomecompleto"></label>
@@ -279,6 +283,8 @@
                           required
                         />
                         <label class="form-label" for="cpfInput"></label>
+                        <span id="cpf-error" class="invalid-feedback"></span>
+                        <span id="cpf-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -291,19 +297,26 @@
                           placeholder="Data de Nascimento"
                           required
                         />
-                        <label class="form-label" for="form2Example22"></label>
+                        <label class="form-label" for="Nascimento"></label>
+                        <span id="nascimento-error" class="invalid-feedback"></span>
+                        <span id="nascimento-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4">
                         <input
                           type="tel"
-                          id="celular"
+                          maxlength="19"
+                          id="phone"
                           class="form-control celular"
+                          oninput="applyPhoneNumberMask(this)"
                           placeholder="Telefone Celular"
                           name="celular"
                           required
                         />
-                        <label class="form-label" for="form2Example22"></label>
+                        <label class="form-label" for="celular"></label>
+                        <span id="celular-error" class="invalid-feedback"></span>
+                        <span id="celular-error2" class="invalid-feedback"></span>
+                        <span id="celular-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -311,11 +324,16 @@
                           type="tel"
                           id="telfixo"
                           name="telfixo"
+                          maxlength="18"
+
                           class="form-control telfixo"
                           placeholder="Telefone Fixo"
+                          oninput="applyTelefoneFixoNumberMask(this)"
                           required
                         />
-                        <label class="form-label" for="form2Example22"></label>
+                        <label class="form-label" for="telfixo"></label>
+                        <span id="telfixo-error" class="invalid-feedback"></span>
+                        <span id="telfixo-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4" required>
@@ -336,16 +354,34 @@
                       <br />
 
                     
-                      <div class="form-outline mb-4">
+                      <div class="form-outline mb-4" id="cep">
                         <input
                           type="text"
-                          id="endereço"
-                          name="endereço"
-                          class="form-control endereço"
+                          id="cep"
+                          name="cep"
+                          class="form-control cep"
                           placeholder="CEP"
                           required
                         />
-                        <label class="form-label" for="form2Example22"></label>
+                        <label class="form-label" for="cep"></label>
+                        <span id="cep-error" class="invalid-feedback"></span>
+                        <span id="cep-success" class="valid-feedback"></span>
+                      </div>
+
+                      <div class="form-outline mb-4" id="bairro">
+                        <input
+                          type="text"
+                          id="bairro"
+                          name="bairro"
+                          class="form-control bairro"
+                          placeholder="Bairro"
+                          maxlength="9"
+                          onblur="pesquisacep(this.value);"
+                          required
+                        />
+                        <label class="form-label" for="bairro"></label>
+                        <span id="bairro-error" class="invalid-feedback"></span>
+                        <span id="bairro-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -357,7 +393,9 @@
                           placeholder="Endereço"
                           required
                         />
-                        <label class="form-label" for="form2Example22"></label>
+                        <label class="form-label" for="endereço"></label>
+                        <span id="endereço-error" class="invalid-feedback"></span>
+                        <span id="endereço-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="text-center pt-1 mb-5 pb-1">
@@ -442,5 +480,5 @@
     ></script>
     <!--meu js-->
     <script src="login.js"></script>
-  </body>
+    <script src="cep.js"></script>
 </html>
