@@ -357,21 +357,24 @@
                       <div class="form-outline mb-4" id="cep">
                         <input
                           type="text"
-                          id="cep"
+                          id="TxtCep"
                           name="cep"
+                          value=""
+                          size="10"
                           class="form-control cep"
                           placeholder="CEP"
                           required
                         />
                         <label class="form-label" for="cep"></label>
-                        <span id="cep-error" class="invalid-feedback"></span>
-                        <span id="cep-success" class="valid-feedback"></span>
+                        <span id="cepvalido-error" class="invalid-feedback"></span>
+                        <span id="cepvalido-success" class="valid-feedback"></span>
+                        
                       </div>
 
                       <div class="form-outline mb-4" id="bairro">
                         <input
                           type="text"
-                          id="bairro"
+                          id="TxtBairro"
                           name="bairro"
                           class="form-control bairro"
                           placeholder="Bairro"
@@ -384,18 +387,58 @@
                         <span id="bairro-success" class="valid-feedback"></span>
                       </div>
 
+
+                      <div class="form-outline mb-4" id="bairro">
+                        <input
+                          type="text"
+                          id="TxtRua"
+                          name="rua"
+                          class="form-control"
+                          placeholder="Rua"
+                          required
+                        />
+                        <label class="form-label" for="bairro"></label>
+                        <span id="rua-error" class="invalid-feedback"></span>
+                        <span id="rua-success" class="valid-feedback"></span>
+                      </div>
+                      <div class="form-outline mb-4" id="bairro">
+                        <input
+                          type="text"
+                          id="numero"
+                          name="numero"
+                          class="form-control bairro"
+                          placeholder="N°"
+        
+                          required
+                        />
+                        <label class="form-label" for="bairro"></label>
+                      </div>
+
                       <div class="form-outline mb-4">
                         <input
                           type="text"
-                          id="endereço"
-                          name="endereço"
+                          id="TxtCidade"
+                          name="cidade"
                           class="form-control endereço"
-                          placeholder="Endereço"
+                          placeholder="Cidade"
                           required
                         />
                         <label class="form-label" for="endereço"></label>
-                        <span id="endereço-error" class="invalid-feedback"></span>
-                        <span id="endereço-success" class="valid-feedback"></span>
+                        <span id="cidade-error" class="invalid-feedback"></span>
+                        <span id="cidade-success" class="valid-feedback"></span>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <input
+                          type="text"
+                          id="TxtEstado"
+                          name="estado"
+                          class="form-control endereço"
+                          placeholder="Estado"
+                          required
+                        />
+                        <label class="form-label" for="endereço"></label>
+                        <span id="estado-error" class="invalid-feedback"></span>
+                        <span id="estado-success" class="valid-feedback"></span>
                       </div>
 
                       <div class="text-center pt-1 mb-5 pb-1">
