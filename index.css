@@ -400,7 +400,7 @@ input:invalid:required {
 }
 
 input:valid {
-  border: 2px solid greenyellow;
+  border: 2px solid #198754;
 }
 
 input:invalid {
@@ -410,3 +410,4 @@ input:invalid {
 .genderform{
   border-color: black;
 }
+

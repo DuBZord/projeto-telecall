@@ -185,9 +185,25 @@
 
                       <div class="form-outline mb-4">
                         <input
+                          type="text"
+                          id="user"
+                          name="user"
+                          class="form-control email"
+                          maxlength="6"
+                          placeholder="Usuario"
+                          required
+                        />
+                        <label class="form-label" for="user"></label>
+                        <span id="user-error" class="invalid-feedback"></span>
+                        <span id="user-success" class="valid-feedback"></span>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input
                           type="email"
-                          id="form2Example11"
-                          class="form-control"
+                          id="email"
+                          name="email"
+                          class="form-control email"
                           placeholder="E-mail"
                           required
                         />
@@ -197,9 +213,10 @@
                       <div class="form-outline mb-4">
                         <input
                           type="password"
-                          id="form2Example22"
-                          class="form-control"
+                          id="senha"
+                          class="form-control senha"
                           placeholder="Senha"
+                          name="senha"
                           minlength="8"
                           required
                         />
@@ -209,8 +226,9 @@
                       <div class="form-outline mb-4">
                         <input
                           type="password"
-                          id="form2Example22"
-                          class="form-control"
+                          name="senha2"
+                          id="senha2"
+                          class="form-control senha2"
                           placeholder="Confirme a Senha"
                           minlength="8"
                           required
@@ -221,36 +239,55 @@
                       <div class="form-outline mb-4">
                         <input
                           type="text"
-                          id="form2Example22"
-                          class="form-control"
+                          id="nomecompleto"
+                          class="form-control nomecompleto"
+                          name="nomecompleto"
                           placeholder="Nome Completo"
-                          minlength="15" maxlength="60"
+                          minlength="15"
+                          maxlength="60"
                           required
                         />
-                        <label class="form-label" for="form2Example22"></label>
+                        <label class="form-label" for="nomecompleto"></label>
+                        <span id="nomecompleto-error" class="invalid-feedback"></span>
+                        <span id="nomecompleto-success" class="valid-feedback"></span>
                       </div>
 
-                      <div class="form-outline mb-4">CPF (Dígitos Apenas)
+                      <div class="form-outline mb-4">
                         <input
-                          type="number"
-                          id="form2Example22"
-                          class="form-control"
-                          placeholder="CPF"
-                          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-                          name="cpf"
-                          minlength="11"
-                          maxlength="11"
+                          type="text"
+                          id="nomemae"
+                          name="nomemae"
+                          class="form-control nomemae"
+                          placeholder="Nome Materno"
                           required
                         />
                         <label class="form-label" for="form2Example22"></label>
+                        <span id="nomemae-error" class="invalid-feedback"></span>
+                        <span id="nomemae-success" class="valid-feedback"></span>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        CPF (Apenas Dígitos)
+                        <input
+                          type="text"
+                          id="cpfInput"
+                          class="form-control cpfInput"
+                          placeholder="CPF"
+                          maxlength="14"
+                          minlength="14"
+                          name="cpfInput"
+                          required
+                        />
+                        <label class="form-label" for="cpfInput"></label>
                       </div>
 
                       <div class="form-outline mb-4">
                         Data de Nascimento
                         <input
                           type="date"
-                          id="form2Example22"
-                          class="form-control"
+                          id="Nascimento"
+                          name="Nascimento"
+                          class="form-control nascimento"
                           placeholder="Data de Nascimento"
                           required
                         />
@@ -260,11 +297,10 @@
                       <div class="form-outline mb-4">
                         <input
                           type="tel"
-                          id="form2Example22"
-                          class="form-control"
+                          id="celular"
+                          class="form-control celular"
                           placeholder="Telefone Celular"
-                          id="telefone"
-                          name="telefone"
+                          name="celular"
                           required
                         />
                         <label class="form-label" for="form2Example22"></label>
@@ -273,10 +309,10 @@
                       <div class="form-outline mb-4">
                         <input
                           type="tel"
-                          id="form2Example22"
-                          class="form-control"
+                          id="telfixo"
+                          name="telfixo"
+                          class="form-control telfixo"
                           placeholder="Telefone Fixo"
-                          oninput="validatePhone ()"
                           required
                         />
                         <label class="form-label" for="form2Example22"></label>
@@ -287,6 +323,8 @@
 
                         <select
                           class="form-outline mb-4 form-control genderform form-select"
+                          name="sexo"
+                          id="sexo"
                           required
                         >
                           <option value="1" disabled>Gênero</option>
@@ -297,12 +335,14 @@
                       </div>
                       <br />
 
+                    
                       <div class="form-outline mb-4">
                         <input
                           type="text"
-                          id="form2Example22"
-                          class="form-control"
-                          placeholder="Nome Materno"
+                          id="endereço"
+                          name="endereço"
+                          class="form-control endereço"
+                          placeholder="CEP"
                           required
                         />
                         <label class="form-label" for="form2Example22"></label>
@@ -310,9 +350,10 @@
 
                       <div class="form-outline mb-4">
                         <input
-                          type="password"
-                          id="form2Example22"
-                          class="form-control"
+                          type="text"
+                          id="endereço"
+                          name="endereço"
+                          class="form-control endereço"
                           placeholder="Endereço"
                           required
                         />
@@ -322,9 +363,9 @@
                       <div class="text-center pt-1 mb-5 pb-1">
                         <button
                           class="btn btn-danger btn-block fa-lg gradient-custom-2 mb-3 btn-login"
-                          type="button"
+                          type="submit"
                         >
-                          Login
+                          Criar Conta
                         </button>
                         <a class="esqsenha" href="#!" class="esqsenha"
                           >Esqueceu a senha?</a
@@ -332,11 +373,11 @@
                       </div>
 
                       <div class="d-flex">
-                        <p class="mb-0 me-2">Não tem uma conta?</p>
-                        <button type="submit" class="btn btn-danger btn-login">
-                          Criar Conta
+                        <p class="mb-0 me-2">Já tem uma conta?</p>
+                        <a href="login.html"><button type="button" href="login.html" class="btn btn-danger btn-login">
+                          Fazer Login
                         </button>
-                      </div>
+                      </div></a>
                     </form>
                   </div>
                 </div>
