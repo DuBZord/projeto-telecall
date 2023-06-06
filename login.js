@@ -98,18 +98,25 @@ const usercerto = document.getElementById('user-success');
 userInput.addEventListener('input', () => {
   const value = userInput.value.trim();
 
-  if (!/^[A-Za-zÀ-ú\s]+$/.test(value)) {
-    userInput.classList.add('is-invalid');
+  if (value.length < 6) {
     userInput.classList.remove('is-valid');
+    userInput.classList.add('is-invalid');
+    usererrado.innerText = 'O campo deve conter exatamente 6 caracteres alfabéticos.';
+    usercerto.innerText = '';
+  } else if (!/^[A-Za-zÀ-ú\s]+$/.test(value)) {
+    userInput.classList.remove('is-valid');
+    userInput.classList.add('is-invalid');
     usererrado.innerText = 'O campo deve conter exatamente 6 caracteres alfabéticos.';
     usercerto.innerText = '';
   } else {
     userInput.classList.remove('is-invalid');
     userInput.classList.add('is-valid');
     usererrado.innerText = '';
-    usercerto.innerText = 'Usuário Valido';
+    usercerto.innerText = 'Usuário Validado com sucesso.';
   }
 });
+
+
 
 
 // VALIDAÇAO usuario //
