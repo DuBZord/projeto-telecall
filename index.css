@@ -532,10 +532,70 @@ border: 2px solid rgba(7, 83, 255, 1);
 
 .textocard3{
   font-size: 1.9rem;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
 
 }
 
 .textocard{
 font-size: 2.8rem;
+animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+transform: scale(0.94);
+animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+100% {
+  transform: scale(1);
+}
+}
+.textocard3{
+  font-size: 1.9rem;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
 
+}
+
+.textocard:hover{
+font-size: 2.8rem;
+animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+transform: scale(0.94);
+animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+100% {
+  transform: scale(1);
+}
+}
+
+.textocard3{
+  font-size: 1.9rem;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.textocard3:hover{
+  font-size: 1.9rem;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
 }
