@@ -158,6 +158,21 @@
       </div>
     </nav>
 
+    <div class="modal fade" id="message-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body" id="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!---login-->
     <section class="gradient-form form3" style="background-color: #eee">
       
@@ -179,7 +194,7 @@
                       />
                     </div>
 
-                    <form id="formulariotodo" class="form-row ">
+                    <form id="cadastro-form"  class="form-row">
                       <p>Faça seu Registro</p>
 
                       <div class="form-outline mb-4">
@@ -445,6 +460,7 @@
                         <button
                           class="btn btn-danger btn-block fa-lg gradient-custom-2 mb-3 btn-login"
                           type="submit"
+                          id="botaodapaginaderegistroparadarsubmit"
                         >
                           Criar Conta
                         </button>
@@ -462,6 +478,8 @@
                     
                   </div>
                 </div>
+
+
                 <div
                   class="col-lg-6 d-flex  gradient-custom-2 card-gradiente"
                 >
@@ -506,7 +524,7 @@
           <i class="fa fa-facebook fafooter"></i>
           <a
             href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial"
-            class="btn btn-outline-light btn-lg btn-floating mx-2 btnfooter bg-success"
+            class="btn btn-outline-light btn-lg btn-floating mx-2 btnfooter bg-cadastro"
           >
             <i class="fa fa-whatsapp fafooter"></i>
           </a>
@@ -532,4 +550,5 @@
     <!--meu js-->
     <script src="login.js"></script>
     <script src="cep.js"></script>
+    <script src="codigonovo.js"></script>
 </html>

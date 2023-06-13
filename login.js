@@ -385,7 +385,33 @@ inputField.addEventListener('keydown', (event) => {
 
 
   
+//funçao localstorage//
+
+function loginUser(username, password) {
+  // Obtém os registros de login do localStorage
+  var loginRecords = getLoginRecords();
+
+  // Percorre os registros e verifica se há uma correspondência com as informações fornecidas
+  for (var i = 0; i < loginRecords.length; i++) {
+    if (
+      loginRecords[i].username === username &&
+      loginRecords[i].password === password
+    ) {
+      return true; // Retorna true se houver correspondência
+    }
+  }
+
+  return false; // Retorna false se não houver correspondência
+}
+
+
   
+  //funcao localstorage//
+
+  //funcao logout//
+
+  // Função para fazer o logout
+
 
 
 

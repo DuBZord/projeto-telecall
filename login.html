@@ -158,6 +158,23 @@
       </div>
     </nav>
 
+    <div class="modal fade" id="message-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body" id="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!---login-->
     <section class="h-100 gradient-form form3" style="background-color: #eee">
       <div class="container py-5 h-100">
@@ -175,13 +192,13 @@
                       />
                     </div>
 
-                    <form>
+                    <form id="login-form">
                       <p>Faça login</p>
 
                       <div class="form-outline mb-4">
                         <input
                           type="text"
-                          id="user"
+                          id="user-login"
                           name="user"
                           class="form-control email userinput"
                           maxlength="6"
@@ -196,7 +213,7 @@
                       <div class="form-outline mb-4">
                         <input
                           type="password"
-                          id="senha"
+                          id="senha-login"
                           class="form-control senhainput"
                           placeholder="Senha"
                           name="senha"
@@ -207,11 +224,13 @@
                         <span id="senha-error" class="invalid-feedback"></span>
                         <span id="senha-success" class="valid-feedback"></span>
                       </div>
+                     
 
                       <div class="text-center pt-1 mb-5 pb-1">
                         <button
                           class="btn btn-danger btn-block fa-lg gradient-custom-2 mb-3 btn-login"
-                          type="button"
+                          type="submit"
+                          id="botaologar"
                         >
                           Login
                         </button>
@@ -226,6 +245,7 @@
                           <button
                             type="button"
                             class="btn btn-danger btn-login"
+                            id="botaodapaginadelogin"
                           >
                             Criar Conta
                           </button></a
@@ -297,5 +317,6 @@
     ></script>
     <!--meu js-->
     <script src="login.js"></script>
+    <script src="codigonovo.js"></script>
   </body>
 </html>
