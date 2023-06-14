@@ -23,7 +23,10 @@
     <!--css-->
     <link rel="stylesheet" href="index.css" />
     <!---sweet alert-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
+    />
   </head>
   <body>
     <!--NAVBAR-->
@@ -154,12 +157,21 @@
             <a
               href="login.html"
               class="btn btn-warning shadow-sm d-sm-block d-block fa fa-user fa-2x"
-              > Área do Cliente</a
-            ></div>
+            >
+              Área do Cliente</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              id="btn-logout"
+              class="btn btn-warning shadow-sm d-sm-block d-block fa fa-sign-out fa-2x btnlogout"
+              >Logout</a
+            >
+          </div>
         </div>
       </div>
     </nav>
-
 
     <!---login-->
     <section class="h-100 gradient-form form3" style="background-color: #eee">
@@ -237,14 +249,18 @@
                     </form>
                   </div>
                 </div>
-                <div
-                  class="col-lg-6 gradient-custom-2 card-gradiente"
-                >
+                <div class="col-lg-6 gradient-custom-2 card-gradiente">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                     <h4 class="mb-4 textocard">Faça seu Login Agora !</h4>
-                    <p class="small mb-4 textocard3">PLANOS A PARTIR DE R$ 29,90
-                      Planos pré-pagos de 1 a 30GB com valores que cabem no orçamento da sua empresa.</p>
-                      <img src="./assets/telecall assets/telecall-logo-white-1.png" alt="" class="imgcardtelecall2">
+                    <p class="small mb-4 textocard3">
+                      PLANOS A PARTIR DE R$ 29,90 Planos pré-pagos de 1 a 30GB
+                      com valores que cabem no orçamento da sua empresa.
+                    </p>
+                    <img
+                      src="./assets/telecall assets/telecall-logo-white-1.png"
+                      alt=""
+                      class="imgcardtelecall2"
+                    />
                   </div>
                 </div>
               </div>
@@ -301,6 +317,7 @@
     <!--meu js-->
     <script src="login.js"></script>
     <script src="localstoragelogin.js"></script>
+    <script src="logado.js"></script>
     <!--sweet alert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   </body>

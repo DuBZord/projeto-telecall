@@ -43,7 +43,7 @@ body {
  font-size: 1rem;
 }
 .btn-warning{
-  border: none !important;
+  bborder: none !important;
   align-items: center;
   border-radius: 0px !important;
   border-width: 0rem !important;
@@ -51,7 +51,7 @@ body {
   cursor: pointer;
   display: inline-flex;
   padding-left: 10px;
-  padding-right: 11rem;
+  padding-right: 11.9rem;
   size: 50rem;
   width: fit-content;
   height: 48px;
@@ -61,7 +61,7 @@ body {
   list-style: none;
   overflow: hidden;
   margin-top: 15px;
-  margin-left: 5rem;
+  margin-left: 1rem;
   margin-bottom: 0.5rem;
   position: relative;
   text-align: left;
