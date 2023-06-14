@@ -30,6 +30,7 @@ a:active{
 /**body*/
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #285aeb;
 }
 /*btn*/
 .btn-danger:hover {
