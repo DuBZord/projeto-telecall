@@ -12,14 +12,23 @@
   --gray-3: #828899;
 
 }
+
+
+
+
+
+
+
 body.dark-mode {
   background-color: #0D0D0D;
   color: #fff;
+  transition: all 0.5ms;
 }
 
 .dark-mode .navbar {
   background-color: black;
   color: #fff;
+  transition: all 0.5ms;
 }
 
 .dark-mode .navbar a {
@@ -121,6 +130,7 @@ body {
 
 display: flex;
 position: relative;
+cursor: default !important;
 }
 
 .btnlogout{
@@ -133,6 +143,7 @@ position: relative;
   padding-right: 0 !important;
   margin-left: 3.9rem !important;
   margin-right: 0 !important;
+   cursor: default !important;
   }
 
 .btn-warning.fa::before{

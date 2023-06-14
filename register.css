@@ -192,11 +192,13 @@ color: white;
 body.dark-mode {
   background-color: #0D0D0D;
   color: #fff;
+  
 }
 
 .dark-mode .navbar {
   background-color: black;
   color: #fff;
+  transition: all 0.5ms;
 }
 
 .dark-mode .navbar a {
