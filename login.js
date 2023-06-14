@@ -1,6 +1,6 @@
 // VALIDAÇAO usuario //
 
-const userInput = document.getElementById('user');
+const userInput = document.getElementById('user-login');
 const usererrado = document.getElementById('user-error');
 const usercerto = document.getElementById('user-success');
 
@@ -21,7 +21,7 @@ userInput.addEventListener('input', () => {
     userInput.classList.remove('is-invalid');
     userInput.classList.add('is-valid');
     usererrado.innerText = '';
-    usercerto.innerText = 'Usuário Validado com sucesso.';
+    usercerto.innerText = 'Usuário Valido';
   }
 });
 
@@ -33,7 +33,7 @@ userInput.addEventListener('input', () => {
 
 // VALIDAÇAO senha //
 
-const senhaInput = document.getElementById('senha');
+const senhaInput = document.getElementById('senha-login');
 const senhaError = document.getElementById('senha-error');
 const senhaSuccess = document.getElementById('senha-success');
 

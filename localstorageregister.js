@@ -44,7 +44,7 @@ function saveLoginInfo(username, password) {
       title: "Erro!",
       text: "Ocorreu um erro ao salvar os dados de cadastro. Por favor, tente novamente.",
       showConfirmButton: false,
-      timer: 2000
+      timer: 3000
     });
   }
 }
