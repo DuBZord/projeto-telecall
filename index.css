@@ -30,7 +30,6 @@ a:active{
 /**body*/
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background-color: #285aeb;
 }
 /*btn*/
 .btn-danger:hover {
@@ -229,6 +228,7 @@ color: white;
 
 .navbar {
   padding: 15px 0px;
+
 }
 .navbar-collapse{
   transition: ease-in-out 0.5s;
@@ -321,31 +321,68 @@ color: white;
 .c-item {
   height: 580px;
 }
+
 .c-img {
   padding-top: 70px;
-  height: 110%;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
   filter: brightness(1);
 }
+
 .carousel-caption {
-  color: var(---black);
+  color: var(--black);
   font-size: 16px;
-  font-weight: 500px;
-  font-weight: bolder;
-  line-height: 1px;
+  font-weight: bold;
+  line-height: 1;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+position: absolute;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  font-size: 55px;
+  color: var(--white);
+  background-color: rgba(5, 0, 0, 0.5);
+  border-radius: 0;
+  z-index: 10;
+  line-height: 1rem;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-
-  outline: var(---black);
-  background-size: 100%, 100%;
-  border-radius: 80%;
   background-image: none;
-  position: absolute;
-  border: solid;
 }
+
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev.d-none,
+  .carousel-control-next.d-none {
+    display: none !important;
+  }
+  
+  .carousel-control-prev.d-sm-block,
+  .carousel-control-next.d-sm-block {
+    display: block !important;
+  }
+  
+  .carousel-caption {
+    font-size: 14px;
+  }
+}
+
 .carousel-control-prev-icon {
   background-image: none !important;
 }
@@ -355,9 +392,7 @@ color: white;
   font-size: 55px;
   color: var(--white);
 }
-.carousel-control {
-  background-image: none !important;
-}
+
 .carousel-control-prev-icon:after {
   content: "<";
   font-size: 55px;
@@ -367,6 +402,13 @@ color: white;
 .carousel-indicators {
   bottom: 0;
 }
+
+.carousel {
+  margin-top: 1.5rem;
+}
+
+
+
 /*carousel*/
 
 /*** card container **/
