@@ -22,6 +22,8 @@
     />
     <!--css-->
     <link rel="stylesheet" href="register.css" />
+    <!---sweet alert-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
   </head>
   <body>
     <!--NAVBAR-->
@@ -194,7 +196,7 @@
                       />
                     </div>
 
-                    <form id="cadastro-form"  class="form-row">
+                    <form id="cadastro-form" class="form-row ">
                       <p>Faça seu Registro</p>
 
                       <div class="form-outline mb-4">
@@ -460,7 +462,6 @@
                         <button
                           class="btn btn-danger btn-block fa-lg gradient-custom-2 mb-3 btn-login"
                           type="submit"
-                          id="botaodapaginaderegistroparadarsubmit"
                         >
                           Criar Conta
                         </button>
@@ -478,8 +479,6 @@
                     
                   </div>
                 </div>
-
-
                 <div
                   class="col-lg-6 d-flex  gradient-custom-2 card-gradiente"
                 >
@@ -524,7 +523,7 @@
           <i class="fa fa-facebook fafooter"></i>
           <a
             href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial"
-            class="btn btn-outline-light btn-lg btn-floating mx-2 btnfooter bg-cadastro"
+            class="btn btn-outline-light btn-lg btn-floating mx-2 btnfooter bg-success"
           >
             <i class="fa fa-whatsapp fafooter"></i>
           </a>
@@ -548,7 +547,9 @@
       crossorigin="anonymous"
     ></script>
     <!--meu js-->
-    <script src="login.js"></script>
+    <script src="register.js"></script>
     <script src="cep.js"></script>
-    <script src="codigonovo.js"></script>
+    <script src="localstoragecodes.js"></script>
+    <!--sweet alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
 </html>
