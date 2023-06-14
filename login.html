@@ -30,7 +30,7 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-xxl fixed-top -lg bg-danger">
+    <nav class="navbar navbar-expand-xxl fixed-top -lg">
       <div class="container-xxl">
         <a class="navbar-brand" href="index.html">
           <img
@@ -169,6 +169,10 @@
               >Logout</a
             >
           </div>
+          <div>
+            <button id="dark-mode-toggle" class="btn  btndarkmode fa fa-solid fa-moon-o"
+            ></button>
+          </div>
         </div>
       </div>
     </nav>
@@ -270,7 +274,7 @@
       </div>
     </section>
     <!---FOOTER-->
-    <footer class="text-center text-lg-start bg-danger footermeu">
+    <footer class="text-center text-lg-start footermeu footer" id="footer">
       <div class="container d-flex justify-content-center py-5">
         <a
           href="https://github.com/MatheusMigliani"
@@ -318,6 +322,7 @@
     <script src="login.js"></script>
     <script src="localstoragelogin.js"></script>
     <script src="logado.js"></script>
+    <script src="darkmode.js"></script>
     <!--sweet alert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   </body>

@@ -186,6 +186,87 @@ color: white;
 
 /*btn*/
 
+
+
+/*dark mode*/
+body.dark-mode {
+  background-color: #0D0D0D;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: black;
+  color: #fff;
+}
+
+.dark-mode .navbar a {
+  color: #fff;
+}
+
+.dark-mode #footer {
+  background-color: black !important;
+  color: white;
+}
+
+.dark-mode #servicos {
+  background-color: #0D0D0D;
+  color: #fff;
+}
+.btndarkmode{
+  width: 4.9rem !important;
+  height: 50px !important;
+  border: solid;
+  border-radius:8px !important;
+ 
+  color: white;
+  font-size: 30px;
+
+}
+.btndarkmode:hover{
+  border: solid !important;
+  border-color: black !important;
+  color: white !important;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #222222; /* Cor de fundo escura para o dropdown */
+}
+
+.dark-mode .dropdown-item {
+  color: #FFFFFF; /* Cor do texto claro para os itens do dropdown */
+}
+
+.dark-mode .dropdown-item:hover,
+.dark-mode .dropdown-item:focus {
+  background-color: #333333; /* Cor de fundo escura para o item do dropdown quando hover ou focus */
+}
+
+.dark-mode .card {
+  background-color: black;
+  color: #ffffff;
+}
+
+.dark-mode .card-body {
+  background-color: black;
+  color: #ffffff;
+}
+
+.dark-mode .card-title {
+  color: #ffffff;
+}
+
+.dark-mode .card-text {
+  color: white;
+  background-color:black;
+}
+
+
+
+.dark-mode .btn:hover,
+.dark-mode .btn:focus {
+  background-color: black;
+}
+
 /*nav*/
 .navbar .btn-outline-secondary {
   margin-inline-start: 5px;
@@ -211,6 +292,7 @@ color: white;
 
 .navbar {
   padding: 15px 0px;
+  background-color: #ca1c2a;
 }
 
 .nav-link {
@@ -503,6 +585,7 @@ color: white;
 
 .footermeu {
   margin-top: 8rem;
+  background-color: #ca1c2a;
 }
 
 input:invalid:required {
