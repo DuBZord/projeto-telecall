@@ -10,6 +10,7 @@
   --blue-1: #00bfff;
   --blue-2: #4169e1;
   --gray-3: #828899;
+
 }
 a {
   color: inherit;
@@ -36,7 +37,11 @@ body {
   border-color: #010101;
 }
 
+.btnlogin{
 
+display: flex;
+position: relative;
+}
 
 .btn-warning.fa::before{
   font-family: 'FontAwesome';
@@ -51,7 +56,7 @@ body {
   cursor: pointer;
   display: inline-flex;
   padding-left: 10px;
-  padding-right: 11rem;
+  padding-right: 11.9rem;
   size: 50rem;
   width: fit-content;
   height: 48px;
@@ -61,7 +66,7 @@ body {
   list-style: none;
   overflow: hidden;
   margin-top: 15px;
-  margin-left: 5rem;
+  margin-left: 1rem;
   margin-bottom: 0.5rem;
   position: relative;
   text-align: left;
@@ -212,6 +217,12 @@ color: white;
 .navbar {
   padding: 15px 0px;
 }
+.navbar-collapse{
+  transition: ease-in-out 0.5s;
+}
+  
+
+
 
 .nav-link {
   margin-left: 20px;
@@ -241,8 +252,7 @@ color: white;
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-evenly;
-
+  justify-content: center;
 }
 
 .dropdown,
