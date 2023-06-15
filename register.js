@@ -18,18 +18,60 @@ cpfInput.addEventListener('input', () => {
 
   cpfInput.value = cpf;
 
-  if (cpf.length === 14) {
+  if (cpf.length === 14 && isValidCPF(cpf)) {
     cpfInput.classList.remove('is-invalid');
     cpfInput.classList.add('is-valid');
     cpfError.innerText = '';
-    cpfSuccess.innerText = 'CPF válidado com sucesso.';
+    cpfSuccess.innerText = 'CPF validado com sucesso.';
   } else {
     cpfInput.classList.remove('is-valid');
     cpfInput.classList.add('is-invalid');
-    cpfError.innerText = 'CPF inválido. Informe 11 dígitos numéricos.';
+    cpfError.innerText = 'CPF inválido. Informe um CPF válido no formato XXX.XXX.XXX-XX.';
     cpfSuccess.innerText = '';
   }
 });
+
+function isValidCPF(cpf) {
+  const cpfNumbers = cpf.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+  if (cpfNumbers.length !== 11) {
+    return false; // CPF deve ter exatamente 11 dígitos numéricos
+  }
+  const cpfArray = cpfNumbers.split('').map(Number); // Converte os dígitos do CPF em um array numérico
+
+  // Verifica se todos os dígitos são iguais
+  if (cpfArray.every(digit => digit === cpfArray[0])) {
+    return false; // CPF com todos os dígitos iguais é inválido
+  }
+
+  // Verificação do primeiro dígito verificador
+  let sum = 0;
+  for (let i = 0; i < 9; i++) {
+    sum += cpfArray[i] * (10 - i);
+  }
+  let remainder = (sum * 10) % 11;
+  if (remainder === 10) {
+    remainder = 0;
+  }
+  if (remainder !== cpfArray[9]) {
+    return false; // Primeiro dígito verificador inválido
+  }
+
+  // Verificação do segundo dígito verificador
+  sum = 0;
+  for (let i = 0; i < 10; i++) {
+    sum += cpfArray[i] * (11 - i);
+  }
+  remainder = (sum * 10) % 11;
+  if (remainder === 10) {
+    remainder = 0;
+  }
+  if (remainder !== cpfArray[10]) {
+    return false; // Segundo dígito verificador inválido
+  }
+
+  return true; // CPF válido
+}
+
 
 // VALIDAÇAO CPF //
 
@@ -381,43 +423,3 @@ inputField.addEventListener('keydown', (event) => {
 });
   
   // VALIDAÇAO telefone fixo  //
-
-
-
-  
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-// VALIDAÇAO fixo  //
