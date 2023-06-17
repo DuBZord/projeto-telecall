@@ -20,15 +20,14 @@
 
 
 body.dark-mode {
-  background-color: #0D0D0D;
+  background-color: #222120;
   color: #fff;
-  transition: all 0.5ms;
+
 }
 
 .dark-mode .navbar {
-  background-color: black;
+  background-color: #151f44;
   color: #fff;
-  transition: all 0.5ms;
 }
 
 .dark-mode .navbar a {
@@ -36,13 +35,14 @@ body.dark-mode {
 }
 
 .dark-mode #footer {
-  background-color: black !important;
+  background-color: #151f44 !important;
   color: white;
 }
 
 .dark-mode #servicos {
-  background-color: #0D0D0D;
+  background-color: #151f44;
   color: #fff;
+  border-color: #010101;
 }
 .btndarkmode{
   width: 4.9rem !important;
@@ -74,12 +74,12 @@ body.dark-mode {
 }
 
 .dark-mode .card {
-  background-color: black;
+  background-color: #151f44;
   color: #ffffff;
 }
 
 .dark-mode .card-body {
-  background-color: black;
+  background-color: #151f44;
   color: #ffffff;
 }
 
@@ -89,7 +89,7 @@ body.dark-mode {
 
 .dark-mode .card-text {
   color: white;
-  background-color:black;
+  background-color:#151f44;
 }
 
 
@@ -320,12 +320,21 @@ color: white;
 .navbar {
   padding: 15px 0px;
   background-color: #ca1c2a;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
 
 }
 .navbar-collapse{
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.1s;
 }
   
+
+
+
+
+
 
 
 
@@ -355,7 +364,6 @@ color: white;
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
   display: flex;
-  flex-wrap: inherit;
   align-items: center;
   justify-content: center;
 }
@@ -492,11 +500,21 @@ position: absolute;
 }
 
 .carousel-indicators {
+  position: absolute;
+  right: 0;
   bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 4rem;
+  margin-left: 15%;
 }
 
 .carousel {
-  margin-top: 1.5rem;
+  margin-top: 3.5rem;
 }
 
 
@@ -519,9 +537,27 @@ position: absolute;
   color: black;
   font-weight: normal;
   font-size: 36px;
-  transform: scale(3);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   padding-top: 2rem;
+}
+.fa-bars{
+  font-family: 'FontAwesome';
+  font-size:27px;
+  color: white;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+}
+.fa-bars:hover{
+  font-family: 'FontAwesome';
+  font-size:27px;
+  color: white;
+
+}
+.servicos{
+  border: solid var(--blue-2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 0px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 2px 0px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .card {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -531,8 +567,8 @@ position: absolute;
 .card-text,
 .card-body {
 font-weight: lighter;
-  background-color: var(--white);
   color: var(--blue-2);
+  
 }
 .card {
   background-color: aliceblue;

@@ -1,0 +1,76 @@
+.card-body {
+  font-weight: lighter;
+  color: white !important;
+  background: rgb(202, 28, 42) !important;
+  background: linear-gradient(
+    186deg,
+    rgba(202, 28, 42, 1) 0%,
+    rgba(42, 172, 228, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
+  ) !important;
+  border-bottom: solid white;
+  border-top: solid white;
+  border-left: solid white;
+  border: solid white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.c2-img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  filter: brightness(1);
+}
+
+.c2-main{
+    padding-top: 5rem;
+}
+ 
+.c2-img{
+    border-color: linear-gradient(
+        186deg,
+        rgba(202, 28, 42, 1) 0%,
+        rgba(42, 172, 228, 1) 46%,
+        rgba(0, 212, 255, 1) 100%
+      ) !important;
+    border-width: 1rem;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.c2-img:hover{
+    border: solid 1px white;
+    border-width: 1rem;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.carousel-item:hover{
+    transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.carousel-item{
+    transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bordacont{
+    transition: all 1s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.bordacont:hover{
+    transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.txtcpas{
+  line-height: 1%;
+font-size: 32px;
+color: black;
+padding-top: 5rem;
+transition: all 0.5s ease-in;
+}

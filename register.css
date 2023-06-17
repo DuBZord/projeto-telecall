@@ -190,15 +190,14 @@ color: white;
 
 /*dark mode*/
 body.dark-mode {
-  background-color: #0D0D0D;
+  background-color: #222120;
   color: #fff;
-  
+
 }
 
 .dark-mode .navbar {
-  background-color: black;
+  background-color: #151f44;
   color: #fff;
-  transition: all 0.5ms;
 }
 
 .dark-mode .navbar a {
@@ -206,12 +205,12 @@ body.dark-mode {
 }
 
 .dark-mode #footer {
-  background-color: black !important;
+  background-color: #151f44 !important;
   color: white;
 }
 
 .dark-mode #servicos {
-  background-color: #0D0D0D;
+  background-color: #151f44;
   color: #fff;
 }
 .btndarkmode{
@@ -244,12 +243,12 @@ body.dark-mode {
 }
 
 .dark-mode .card {
-  background-color: black;
+  background-color: #151f44;
   color: #ffffff;
 }
 
 .dark-mode .card-body {
-  background-color: black;
+  background-color: #151f44;
   color: #ffffff;
 }
 
@@ -259,7 +258,7 @@ body.dark-mode {
 
 .dark-mode .card-text {
   color: white;
-  background-color:black;
+  background-color:#151f44;
 }
 
 
@@ -267,6 +266,21 @@ body.dark-mode {
 .dark-mode .btn:hover,
 .dark-mode .btn:focus {
   background-color: black;
+}
+
+.fa-bars{
+  font-family: 'FontAwesome';
+  font-size:27px;
+  color: white;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+}
+.fa-bars:hover{
+  font-family: 'FontAwesome';
+  font-size:27px;
+  color: white;
+
 }
 
 /*nav*/
@@ -280,6 +294,19 @@ body.dark-mode {
   padding: 10px 16px;
   margin-bottom: 12px;
 }
+
+
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: center !important;
+}
+
+
+
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
