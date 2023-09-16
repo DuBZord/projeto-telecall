@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!--css-->
-    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="./style/register.css" />
     <!---sweet alert-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
   </head>
@@ -397,7 +397,7 @@
                       </div>
 
 
-                      <div class="form-outline mb-4" id="bairro">
+                      <div class="form-outline mb-4" >
                         <input
                           type="text"
                           id="TxtRua"
@@ -410,7 +410,7 @@
                         <span id="rua-error" class="invalid-feedback"></span>
                         <span id="rua-success" class="valid-feedback"></span>
                       </div>
-                      <div class="form-outline mb-4" id="bairro">
+                      <div class="form-outline mb-4" >
                         <input
                           type="text"
                           id="numero"
@@ -457,7 +457,7 @@
                         >
                           Criar Conta
                         </button>
-                        <a class="esqsenha" href="#!" class="esqsenha"
+                        <a class="esqsenha" href="#!" 
                           >Esqueceu a senha?</a
                         >
                       </div>
@@ -466,9 +466,9 @@
                         <p class="mb-0 me-2">Já tem uma conta?</p>
                         <a href="login.html"><button type="button" href="login.html" class="btn btn-danger btn-login">
                           Fazer Login
-                        </button>
-                      </div></a>
-                    
+                        </button></a>
+                      </div>
+                    </form>
                   </div>
                 </div>
                 <div
@@ -485,7 +485,7 @@
                           <img src="./assets/telecall assets/telecall-logo-white-1.png" alt="" class="imgcardtelecall2">
                   </div>
                   
-                </form>
+
                 </div>
               </div>
             </div>
@@ -539,11 +539,12 @@
       crossorigin="anonymous"
     ></script>
     <!--meu js-->
-    <script src="register.js"></script>
-    <script src="login.js"></script>
-    <script src="cep.js"></script>
-    <script src="localstorageregister.js"></script>
-    <script src="darkmode.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/cep.js"></script>
+    <script src="./scripts/localstorageregister.js"></script>
+    <script src="./scripts/darkmode.js"></script>
     <!--sweet alert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  </body>
 </html>
