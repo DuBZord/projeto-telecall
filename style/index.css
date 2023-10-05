@@ -805,3 +805,59 @@ animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
     transform: scale(1);
   }
 }
+
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem !important;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+fa {
+  font-family: "FontAwesome" !important;
+}
+
+.carduser{
+  color: rgba(96, 112, 128, .75);
+  font-size: 16;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.fa-user-circle{
+color: red;
+  font-size: 90px;
+  font-family: "FontAwesome" !important;
+  margin-top: 5px;
+
+}
+
+
+
+.fa-lock{
+  color: red;
+
+  font-size: 60px;
+}
+
+.fa-envelope-o{
+font-size: 60px;
+  color: red;
+}
+
+.fa-phone{
+  color: red;
+  font-size: 60px;
+}
+
+.fa-home{
+  color: red;
+  font-size: 60px;
+}
