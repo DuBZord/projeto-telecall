@@ -23,11 +23,14 @@
     <!--css-->
     <link rel="stylesheet" href="./style/register.css" />
     <!---sweet alert-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
+    />
   </head>
   <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-xxl fixed-top -lg ">
+    <nav class="navbar navbar-expand-xxl fixed-top -lg">
       <div class="container-xxl">
         <a class="navbar-brand" href="index.html">
           <img
@@ -58,12 +61,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Internet
+                Banco de dados
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="login.html"
-                    >Internet Dedicada</a
+                  <a class="dropdown-item" href="cpaas.html"
+                    >Modelo do Banco de Dados</a
                   >
                 </li>
                 <li><a class="dropdown-item" href="#">Banda Larga</a></li>
@@ -90,7 +93,9 @@
                   <a class="dropdown-item" href="cpaas.html">Número Máscara</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="cpaas.html">Google Verified Calls</a>
+                  <a class="dropdown-item" href="cpaas.html"
+                    >Google Verified Calls</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="cpaas.html">SMS Programável</a>
@@ -156,30 +161,29 @@
             <a
               href="login.html"
               class="btn btn-warning shadow-sm d-sm-block d-block fa fa-user fa-2x"
-              > Área do Cliente</a
-            ></div>
-            <div>
-              <button id="dark-mode-toggle" class="btn  btndarkmode fa fa-solid fa-moon-o"
-              ></button>
-            </div>
+            >
+              Área do Cliente</a
+            >
+          </div>
+          <div>
+            <button
+              id="dark-mode-toggle"
+              class="btn btndarkmode fa fa-solid fa-moon-o"
+            ></button>
+          </div>
         </div>
       </div>
     </nav>
 
-
     <!---login-->
     <section class="gradient-form form3">
-      
       <div class="container py-5 h-20">
         <div class="row">
           <div class="form-row">
             <div class="card rounded-3 text-black">
-              
               <div class="row g-5">
-                
                 <div class="col-lg-6">
                   <div class="card-body p-md-5 mx-md-4">
-                    
                     <div class="text-center img-login">
                       <img
                         src="./assets/telecall assets/telecall-logo.svg"
@@ -188,7 +192,7 @@
                       />
                     </div>
 
-                    <form id="cadastro-form" class="form-row ">
+                    <form id="cadastro-form" class="form-row">
                       <p>Faça seu Registro</p>
 
                       <div class="form-outline mb-4">
@@ -261,8 +265,14 @@
                           required
                         />
                         <label class="form-label" for="nomecompleto"></label>
-                        <span id="nomecompleto-error" class="invalid-feedback"></span>
-                        <span id="nomecompleto-success" class="valid-feedback"></span>
+                        <span
+                          id="nomecompleto-error"
+                          class="invalid-feedback"
+                        ></span>
+                        <span
+                          id="nomecompleto-success"
+                          class="valid-feedback"
+                        ></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -275,8 +285,14 @@
                           required
                         />
                         <label class="form-label" for="form2Example22"></label>
-                        <span id="nomemae-error" class="invalid-feedback"></span>
-                        <span id="nomemae-success" class="valid-feedback"></span>
+                        <span
+                          id="nomemae-error"
+                          class="invalid-feedback"
+                        ></span>
+                        <span
+                          id="nomemae-success"
+                          class="valid-feedback"
+                        ></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -307,8 +323,14 @@
                           required
                         />
                         <label class="form-label" for="Nascimento"></label>
-                        <span id="nascimento-error" class="invalid-feedback"></span>
-                        <span id="nascimento-success" class="valid-feedback"></span>
+                        <span
+                          id="nascimento-error"
+                          class="invalid-feedback"
+                        ></span>
+                        <span
+                          id="nascimento-success"
+                          class="valid-feedback"
+                        ></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -323,9 +345,18 @@
                           required
                         />
                         <label class="form-label" for="celular"></label>
-                        <span id="celular-error" class="invalid-feedback"></span>
-                        <span id="celular-error2" class="invalid-feedback"></span>
-                        <span id="celular-success" class="valid-feedback"></span>
+                        <span
+                          id="celular-error"
+                          class="invalid-feedback"
+                        ></span>
+                        <span
+                          id="celular-error2"
+                          class="invalid-feedback"
+                        ></span>
+                        <span
+                          id="celular-success"
+                          class="valid-feedback"
+                        ></span>
                       </div>
 
                       <div class="form-outline mb-4">
@@ -334,15 +365,20 @@
                           id="telfixo"
                           name="telfixo"
                           maxlength="18"
-
                           class="form-control telfixo"
                           placeholder="Telefone Fixo"
                           oninput="applyTelefoneFixoNumberMask(this)"
                           required
                         />
                         <label class="form-label" for="telfixo"></label>
-                        <span id="telfixo-error" class="invalid-feedback"></span>
-                        <span id="telfixo-success" class="valid-feedback"></span>
+                        <span
+                          id="telfixo-error"
+                          class="invalid-feedback"
+                        ></span>
+                        <span
+                          id="telfixo-success"
+                          class="valid-feedback"
+                        ></span>
                       </div>
 
                       <div class="form-outline mb-4" required>
@@ -362,7 +398,6 @@
                       </div>
                       <br />
 
-                    
                       <div class="form-outline mb-4" id="cep">
                         <input
                           type="text"
@@ -375,9 +410,14 @@
                           required
                         />
                         <label class="form-label" for="cep"></label>
-                        <span id="cepvalido-error" class="invalid-feedback"></span>
-                        <span id="cepvalido-success" class="valid-feedback"></span>
-                        
+                        <span
+                          id="cepvalido-error"
+                          class="invalid-feedback"
+                        ></span>
+                        <span
+                          id="cepvalido-success"
+                          class="valid-feedback"
+                        ></span>
                       </div>
 
                       <div class="form-outline mb-4" id="bairro">
@@ -396,8 +436,7 @@
                         <span id="bairro-success" class="valid-feedback"></span>
                       </div>
 
-
-                      <div class="form-outline mb-4" >
+                      <div class="form-outline mb-4">
                         <input
                           type="text"
                           id="TxtRua"
@@ -410,14 +449,13 @@
                         <span id="rua-error" class="invalid-feedback"></span>
                         <span id="rua-success" class="valid-feedback"></span>
                       </div>
-                      <div class="form-outline mb-4" >
+                      <div class="form-outline mb-4">
                         <input
                           type="text"
                           id="numero"
                           name="numero"
                           class="form-control bairro"
                           placeholder="N°"
-        
                           required
                         />
                         <label class="form-label" for="bairro"></label>
@@ -457,35 +495,46 @@
                         >
                           Criar Conta
                         </button>
-                        <a class="esqsenha" href="#!" 
-                          >Esqueceu a senha?</a
-                        >
+                        <a class="esqsenha" href="#!">Esqueceu a senha?</a>
                       </div>
 
                       <div class="text-center pt-1 mb-5 pb-1">
                         <p class="mb-0 me-2">Já tem uma conta?</p>
-                        <a href="login.html"><button type="button" href="login.html" class="btn btn-danger btn-login">
-                          Fazer Login
-                        </button></a>
+                        <a href="login.html"
+                          ><button
+                            type="button"
+                            href="login.html"
+                            class="btn btn-danger btn-login"
+                          >
+                            Fazer Login
+                          </button></a
+                        >
                       </div>
                     </form>
                   </div>
                 </div>
-                <div
-                  class="col-lg-6 d-flex  gradient-custom-2 card-gradiente"
-                >
+                <div class="col-lg-6 d-flex gradient-custom-2 card-gradiente">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                    <img src="./assets/telecall assets/telecall-logo-white-1.png" alt="" class="imgcardtelecall">
+                    <img
+                      src="./assets/telecall assets/telecall-logo-white-1.png"
+                      alt=""
+                      class="imgcardtelecall"
+                    />
 
                     <h4 class="mb-4 textocard">Faça Já Seu Registro !</h4>
-                    <p class="small mb-4 textocard2">O Melhor da Telefonia
-                      Móvel para a sua Empresa.</p>
-                        <p class="small mb-4 textocard3">PLANOS A PARTIR DE R$ 29,90
-                          Planos pré-pagos de 1 a 30GB com valores que cabem no orçamento da sua empresa.</p>
-                          <img src="./assets/telecall assets/telecall-logo-white-1.png" alt="" class="imgcardtelecall2">
+                    <p class="small mb-4 textocard2">
+                      O Melhor da Telefonia Móvel para a sua Empresa.
+                    </p>
+                    <p class="small mb-4 textocard3">
+                      PLANOS A PARTIR DE R$ 29,90 Planos pré-pagos de 1 a 30GB
+                      com valores que cabem no orçamento da sua empresa.
+                    </p>
+                    <img
+                      src="./assets/telecall assets/telecall-logo-white-1.png"
+                      alt=""
+                      class="imgcardtelecall2"
+                    />
                   </div>
-                  
-
                 </div>
               </div>
             </div>
